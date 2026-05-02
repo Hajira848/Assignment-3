@@ -237,3 +237,57 @@ display: block;
 width: 200%; /* Makes cards feel scrollable on mobile */ 
 } 
 } 
+
+                         /* Section 3*/ 
+.mission-section { 
+padding: 100px 0; 
+background-color: #ffffff; 
+overflow: hidden; 
+width: 1500px; ; 
+} 
+/* Left Content */ 
+.mission-text-wrapper { 
+padding-right: 20px; 
+} 
+.mission-img-text { 
+width: 80%; 
+max-width: 550px; 
+height: auto; 
+display: block; 
+} 
+/* Right Content: Visual with Frame */ 
+.mission-visual { 
+position: relative; 
+padding: 30px; /* Space for the yellow frame to show */ 
+display: flex; 
+justify-content: center; 
+align-items: center; 
+} 
+.mission-person-img { 
+position: relative; 
+z-index: 2; 
+width: 70%; 
+max-width: 500px; 
+height: auto; 
+border-radius: 5px; 
+transform: translate(-20px, -20px); 
+} 
+/* Responsive adjustments */ 
+@media (max-width: 991px) { 
+.mission-section { 
+padding: 60px 0; 
+text-align: center; 
+} 
+.mission-visual { 
+margin-top: 50px; 
+} 
+.mission-img-text { 
+margin: 0 auto; 
+} 
+.mission-person-img { 
+transform: translate(0, 0); 
+} 
+.yellow-boundary { 
+display: none; 
+} 
+} 
