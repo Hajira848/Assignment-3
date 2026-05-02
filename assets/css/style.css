@@ -352,39 +352,111 @@ display: none;
 }
 
                             /*Section 5*/
-/* --- SECTION 5: INFO CARDS --- */
-.info-cards-section {
-    padding: 80px 0;
-    background-color: #ffffff; /* White background as per design */
-    width: 100%;
+/* SECTION 5 BACKGROUND (BRIGHT WHITE) */
+.section-white-bg {
+  background-color: #ffffff !important; 
+  padding: 60px 0; 
+  width: 100%;
+  display: block;
+}
+
+.section-white-bg .container {
+  max-width: 1200px !important;
+  margin: 0 auto;
+}
+
+/* THE ROW: Center the columns so they naturally sit closer */
+.section-white-bg .row {
+  justify-content: center !important; 
+  display: flex;
+}
+
+/* LEFT SIDE: IMAGE WRAPPER */
+.yellow-card-wrapper {
+  display: flex;
+  /* Pushes the card to the RIGHT side of its column (towards the text) */
+  justify-content: flex-end; 
+  width: 100%;
+  padding-right: 40px; /* Controls the exact gap between card and text */
+}
+
+.help-card-img {
+  width: 100%;
+  max-width: 700px; 
+  height: auto;
+  display: block;
+  border-radius: 40px;
+  /* Negative padding removed - it does not function in CSS */
+}
+
+/* RIGHT SIDE: TEXT CONTENT */
+.help-center-content {
+  /* Pulls text to the LEFT side of its column (towards the card) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   
+  /* 1. This pushes the whole text block to the right, away from the card */
+  padding-left: 90px; 
+  
+  /* 2. 'width: max-content' forces the text to stay on one single line */
+  width: max-content; 
+  
+  /* 3. Remove the padding-right and massive max-width from before */
+  padding-right: 0;
+  max-width: none;
 }
 
-.info-card {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.help-center-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #02033B;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  margin-left: -50px;
 }
 
-.info-img {
-    width: 50%;
-    max-width: 500px; /* Adjusting size to match design proportions */
-    height: auto;
-    object-fit: contain;
-    /* Adding subtle shadow if the image doesn't already have one */
-    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.03));
-     
+.help-center-p {
+  font-size: 1.1rem;
+  color: #02033B;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  margin-left: -50px;
 }
 
-/* --- RESPONSIVE FIX --- */
-@media (max-width: 767px) {
-    .info-cards-section {
-        padding: 40px 15px;
-    }
-    
-    .info-img {
-        max-width: 100%; /* Full width on mobile */
-        margin-bottom: 20px;
-    }
+/* BUTTON STYLING */
+.btn-help-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 38px; 
+  margin-left: -50px;
+  border: 2px solid #02033B;
+  color: #02033B;
+  border-radius: 50px; 
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 10px; 
+  width: fit-content; /* Ensures button doesn't stretch */
+  transition: all 0.3s ease;
+}
+
+.btn-help-center:hover {
+  background-color: #02033B;
+  color: #ffffff;
+}
+
+/* RESPONSIVE FIX */
+@media (max-width: 991px) {
+  .help-center-content {
+      padding-left: 0;
+      margin-top: 50px;
+      text-align: center;
+      align-items: center;
+  }
+  .yellow-card-wrapper {
+      justify-content: center;
+      padding-right: 0;
+  }
 }
