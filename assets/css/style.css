@@ -663,9 +663,7 @@ display: none;
     margin-left: 40%;           /* Manual positioning */
 
     /* Converts white logo to yellow tone */
-    filter: brightness(0) saturate(100%) invert(89%) 
-            sepia(20%) saturate(1200%) 
-            hue-rotate(350deg) brightness(105%) contrast(100%);
+    
 }
 
 /* Future 50 badge container */
@@ -673,7 +671,8 @@ display: none;
     height: 55px;
     width: auto;
     padding-left: 70%;          /* Pushes it right */
-    margin-bottom: -50%;        /* Pulls it upward */
+    margin-bottom: -50%;   
+         /* Pulls it upward */
 }
 
 /* --- YELLOW CARD (CENTER ELEMENT) --- */
@@ -713,19 +712,12 @@ display: none;
     text-align: left;
 }
 
-/* Legal/disclaimer text */
-.legal-text {
-    font-size: 11px;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.4);
-    max-width: 850px;           /* Controls line wrapping */
-    margin-bottom: 20px;
-}
+
 
 /* Divider line */
 .divider {
     border: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 50px ;
     margin: 20px 0;
 }
 
