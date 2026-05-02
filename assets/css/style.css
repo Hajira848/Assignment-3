@@ -364,7 +364,7 @@ display: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left:5%;
+   
 }
 
 .info-img {
@@ -374,6 +374,7 @@ display: none;
     object-fit: contain;
     /* Adding subtle shadow if the image doesn't already have one */
     filter: drop-shadow(0 5px 15px rgba(0,0,0,0.03));
+     
 }
 
 /* --- RESPONSIVE FIX --- */
