@@ -541,66 +541,67 @@ display: none;
         gap: 15px;
     }
 }
-
-                    /*Section 7*/
-/* --- SECTION 7: STACKED CENTERED LAYOUT (ENHANCED SIZES) --- */
+ 
+                       /*Section7*/
+/* --- SECTION 7: STACKED CENTERED FOOTER LAYOUT --- */
 .footer-stacked-center {
     background-color: #ffffff; 
-    padding: 100px 0; /* Vertical padding thora barha diya hai */
+    padding: 100px 0; /* Increased vertical spacing (top & bottom) */
     width: 100%;
 }
 
-/* Image 20: Top Logo (Large Size) */
+/* --- TOP LOGO (Image 20) --- */
 .img-20-top {
-    max-width: 500px; /* Size barha diya gaya hai */
-    width: 150%;
-    height: auto;
-    margin-bottom: 20px;
+    max-width: 500px; /* Limit maximum size */
+    width: 150%;      /* Makes it appear larger than container (can cause overflow) */
+    height: auto;     /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below logo */
 }
 
-/* Middle Row: 16, 17, 18 (Large Icons) */
+/* --- MIDDLE ROW: BADGES (Images 16, 17, 18) --- */
 .middle-badges-row {
     display: flex;
-    justify-content: center;
-    gap: 50px; /* Icons ke darmiyan space barha di hai */
-    margin-bottom: 40px;
-    flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;  /* Center badges horizontally */
+    gap: 50px;                /* Space between badges */
+    margin-bottom: 40px;      /* Space below badges row */
+    flex-wrap: wrap;          /* Allow wrapping on smaller screens */
+    align-items: center;      /* Vertically align badges */
 }
 
+/* Individual badge styling */
 .badge-mid {
-    height: 400px; /* Size 25px se barha kar 60px kar diya hai */
-    width: auto;
-    object-fit: contain;
-   
+    height: 400px;            /* Large badge size (very big) */
+    width: auto;              /* Maintain aspect ratio */
+    object-fit: contain;      /* Prevent image distortion */
 }
 
-/* Image 19: Bottom Badge (Large) */
+/* --- BOTTOM BADGE (Image 19) --- */
 .img-19-bottom {
-    height: 50px; /* Image 19 ko sabse wazeh rakha hai */
-    width: auto;
+    height: 50px;             /* Fixed height for clarity */
+    width: auto;              /* Maintain aspect ratio */
     display: inline-block;
 }
 
 /* --- MOBILE RESPONSIVE --- */
 @media (max-width: 768px) {
+
     .footer-stacked-center {
-        padding: 60px 20px;
+        padding: 60px 20px;   /* Reduce spacing for smaller screens */
     }
     
     .img-20-top {
-        max-width: 300px;
+        max-width: 300px;     /* Smaller logo on mobile */
     }
     
     .badge-mid {
-        height: 40px; /* Mobile par thora chota rakha hai */
+        height: 40px;         /* Reduce badge size for mobile */
     }
     
     .img-19-bottom {
-        height: 50px;
+        height: 50px;         /* Keep bottom badge readable */
     }
     
     .middle-badges-row {
-        gap: 25px;
+        gap: 25px;            /* Reduce spacing between badges */
     }
 }
