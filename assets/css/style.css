@@ -254,6 +254,7 @@ width: 80%;
 max-width: 550px; 
 height: auto; 
 display: block; 
+margin-left: 14%;
 } 
 /* Right Content: Visual with Frame */ 
 .mission-visual { 
@@ -271,6 +272,7 @@ max-width: 500px;
 height: auto; 
 border-radius: 5px; 
 transform: translate(-20px, -20px); 
+margin-right: 25%;
 } 
 /* Responsive adjustments */ 
 @media (max-width: 991px) { 
