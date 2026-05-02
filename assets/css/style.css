@@ -29,7 +29,7 @@ html, body {
 .hero-content { 
     padding: 0 10% 0 15%;          /* Fixed spacing for layout balance */
     position: relative; 
-    z-index: 5;                    /* Keep content above background elements */
+    z-index: 5;            /* Keep content above background elements */
 } 
 
 .hero-content h1 { 
@@ -131,7 +131,7 @@ html, body {
 }
 
 .fixed-logo {
-    height: 30px;                 
+    height: 40px;                 
     width: auto;                  
     display: block;
     transition: transform 0.3s ease; /* Smooth hover animation */
