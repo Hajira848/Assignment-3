@@ -1,4 +1,5 @@
                        /*Section 1*/
+
 :root { 
     /* Color variables for consistent theme */
     --certo-blue: #4335DE; 
@@ -540,7 +541,7 @@ display: none;
  
                        /*Section7*/
 .footer-stacked-center {
-    background-color: #ffffff; 
+    background-color: #F3F8FF; 
     padding: 100px 0; /* Increased vertical spacing (top & bottom) */
     width: 100%;
 }
@@ -601,45 +602,46 @@ display: none;
     }
 }
 
-                       /*Section 8*/s
+                       /*Section 8*/
+
 .custom-footer {
-    background-color: #02033b;   /* Dark blue footer background */
-    padding: 60px 0;             /* Vertical spacing */
-    color: white;                /* Default text color */
+    background-color: #02033b; /* Dark blue footer background */
+    padding: 60px 0;           /* Vertical spacing (top & bottom) */
+    color: white;              /* Default text color */
     font-family: Arial, sans-serif;
 }
 
 /* Main container for footer content */
 .container {
-    max-width: 900px;            /* Reduced width for tighter layout */
-    margin: 0 auto;              /* Center horizontally */
-    padding: 0 20px;
+    max-width: 900px; /* Keeps layout compact/tight */
+    margin: 0 auto;   /* Centers container horizontally */
+    padding: 0 20px;  /* Side padding */
 }
 
-/* --- TOP ROW: LOGOS & ELEMENTS --- */
+/* --- TOP ROW ALIGNMENT --- */
 .footer-row-wrapper {
     display: flex;
-    justify-content: space-between; /* Spread items across row */
-    align-items: center;            /* Vertically center items */
-    margin-bottom: 40px;
+    justify-content: space-between; /* Space between elements */
+    align-items: center;            /* Vertically center all items */
+    margin-bottom: 40px;            /* Space below row */
 }
 
-/* Logo column */
+/* Logo column wrapper */
 .logo-col {
     display: flex;
     align-items: center;
 }
 
-/* Stack layout (Google + Future 50 logos) */
+/* --- STACK: GOOGLE + FUTURE 50 --- */
 .stack {
-    flex-direction: column;     /* Stack items vertically */
-    align-items: flex-start !important;
-    gap: 15px;                 /* Space between stacked items */
+    flex-direction: column;       /* Stack items vertically */
+    align-items: flex-start !important; /* Align to left */
+    gap: 15px;                    /* Space between stacked items */
 }
 
-/* Convert logos to white */
+/* Converts logos to white */
 .white-logo {
-    
+    filter: brightness(0) invert(1);
     height: 30px;
 }
 
@@ -647,31 +649,32 @@ display: none;
 .img-google { 
     height: 120px;
     width: 100%; 
-    margin-left: -30%;          /* Manual alignment adjustment */
+    margin-left: -30%; /* Manual left shift for alignment */
 }
 
 /* Intel logo styling */
 .img-intel { 
-    height: 200px;              /* Large size */
+    height: 200px;  /* Large size */
     width: 120%; 
-    margin-left: 40%;           /* Manual positioning */
-
-    /* Converts white logo to yellow tone */
+    margin-left: 40%; /* Push to the right */
     
+    /* Converts white logo into yellow tone */
+    filter: brightness(0) saturate(100%) invert(89%) 
+            sepia(20%) saturate(1200%) 
+            hue-rotate(350deg) brightness(105%) contrast(100%);
 }
 
 /* Future 50 badge container */
 .future50-box {
-    height: 55px;
+    height: 55px; 
     width: auto;
-    padding-left: 70%;          /* Pushes it right */
-    margin-bottom: -50%;   
-         /* Pulls it upward */
+    padding-left: 70%;  /* Pushes element right */
+    margin-bottom: -50%; /* Pulls element upward */
 }
 
-/* --- YELLOW CARD (CENTER ELEMENT) --- */
+/* --- YELLOW CARD SECTION --- */
 .yellow-rect {
-    background-color: #ecb322;  /* Yellow background */
+    background-color: #ecb322; /* Yellow background */
     height: 140px;
     width: 70%;
     position: relative;
@@ -679,8 +682,8 @@ display: none;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    margin-left: 40%;           /* Push to right */
-    margin-top: -40px;          /* Pull upward */
+    margin-left: 40%;  /* Push to right */
+    margin-top: -40px; /* Pull upward */
 }
 
 /* Main Certo image */
@@ -690,37 +693,44 @@ display: none;
     display: block;
 }
 
-/* Overlay logo (positioned above main image) */
+/* Overlay logo (placed on top of Certo image) */
 .certo-plus {
-    position: absolute;         /* Positioned relative to parent */
+    position: absolute; /* Positioned relative to parent (.yellow-rect) */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Perfect center alignment */
-    width: 80%;
-    pointer-events: none;       /* Allow clicks to pass through */
+    width: 80%; 
+    pointer-events: none; /* Allows clicks to pass through */
 }
 
-/* --- BOTTOM TEXT SECTION --- */
+/* --- FOOTER TEXT SECTION --- */
 .footer-bottom {
     margin-top: 50px;
-    text-align: left;
+    text-align: left; /* Left-aligned text */
 }
 
-
+/* Legal/disclaimer text (first definition) */
+.legal-text {
+    font-size: 11px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.4);
+    max-width: 850px; /* Controls line wrapping */
+    margin-bottom: 20px;
+}
 
 /* Divider line */
 .divider {
     border: 0;
-    padding-top: 50px ;
+    padding-top:30px ;
     margin: 20px 0;
 }
 
 /* Legal text (overwritten with flex layout) */
 .legal-text {
-    margin-left: -9%;           /* Manual shift */
+    margin-left: -9%; /* Manual left shift */
     display: flex;
-    flex-direction: column;     /* Stack lines */
-    gap: 8px;
+    flex-direction: column; /* Stack lines vertically */
+    gap: 8px;               /* Space between lines */
     font-size: 11px;
     color: rgba(255, 255, 255, 0.6);
     text-align: left;
@@ -728,10 +738,10 @@ display: none;
 
 /* Copyright section */
 .copyright-row {
-    margin-left: -30%;          /* Manual left shift */
+    margin-left: -30%; /* Manual left shift */
     display: flex;
-    flex-direction: column;     /* Stack items vertically */
-    gap: 8px;
+    flex-direction: column; /* Stack items vertically */
+    gap: 8px;               /* Space between items */
     font-size: 11px;
     color: rgba(255, 255, 255, 0.6);
     text-align: left;
@@ -741,4 +751,10 @@ display: none;
 .copyright-row a {
     color: white;
     text-decoration: underline;
+}
+
+/* Duplicate rule (same as above, kept as-is) */
+.copyright-row a { 
+    color: white; 
+    text-decoration: underline; 
 }
