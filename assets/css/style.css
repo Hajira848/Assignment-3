@@ -48,7 +48,7 @@ html, body {
     
     /* Creates a border-like effect using padding */
     padding-top: 25px; 
-    padding-left: 25px; 
+    padding-left: -30px; 
 } 
 
 .hero-bg-image { 
