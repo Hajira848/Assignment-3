@@ -354,37 +354,28 @@ display: none;
                             /*Section 5*/
 /* --- SECTION 5: INFO CARDS --- */
 .info-cards-section {
-    padding: 80px 0;
-    background-color: #ffffff; /* White background as per design */
-    width: 100%;
+    padding: 40px 0; /* Padding kam ki taake upar/neeche ka gap bhi kam ho */
+    background-color: #ffffff;
 }
 
 .info-card {
-    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Image ko box ke center mein rakhega */
     align-items: center;
-   
+    width: 100%;
 }
 
 .info-img {
-    width: 50%;
-    max-width: 500px; /* Adjusting size to match design proportions */
+    width: 100%; /* 50% se badha kar 100% karein */
+    max-width: 480px; /* Original design ke size ke mutabiq */
     height: auto;
     object-fit: contain;
-    /* Adding subtle shadow if the image doesn't already have one */
-    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.03));
-     
+    /* Margins check karein */
+    margin: 0 auto; 
 }
 
-/* --- RESPONSIVE FIX --- */
-@media (max-width: 767px) {
-    .info-cards-section {
-        padding: 40px 15px;
-    }
-    
-    .info-img {
-        max-width: 100%; /* Full width on mobile */
-        margin-bottom: 20px;
-    }
+/* Extra Space khatam karne ke liye Row ka margin fix */
+.row.g-2 {
+    margin-left: 0;
+    margin-right: 0;
 }
