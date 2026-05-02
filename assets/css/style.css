@@ -352,114 +352,118 @@ display: none;
     } 
 }
 
-                            /*Section 5*/
-/* SECTION 5 BACKGROUND (BRIGHT WHITE) */
+                          /*Section 5*/
+/* --- SECTION 5: WHITE BACKGROUND LAYOUT --- */
+
+/* Main section wrapper with white background */
 .section-white-bg {
-  background-color: #ffffff !important; 
-  padding: 60px 0; 
+  background-color: #ffffff !important; /* Bright white background */
+  padding: 60px 0;                      /* Vertical spacing */
   width: 100%;
   display: block;
 }
 
+/* Container settings for consistent width */
 .section-white-bg .container {
-  max-width: 1200px !important;
-  margin: 0 auto;
+  max-width: 1200px !important; /* Limit maximum width */
+  margin: 0 auto;               /* Center container horizontally */
 }
 
-/* THE ROW: Center the columns so they naturally sit closer */
+/* Row alignment */
 .section-white-bg .row {
-  justify-content: center !important; 
+  justify-content: center !important; /* Center columns */
   display: flex;
 }
 
-/* LEFT SIDE: IMAGE WRAPPER */
+/* --- LEFT SIDE: IMAGE WRAPPER --- */
 .yellow-card-wrapper {
   display: flex;
-  /* Pushes the card to the RIGHT side of its column (towards the text) */
-  justify-content: flex-end; 
+  justify-content: flex-end; /* Push image toward the text (right side) */
   width: 100%;
-  padding-right: 40px; /* Controls the exact gap between card and text */
+  padding-right: 40px;       /* Controls spacing between image and text */
 }
 
+/* Image styling */
 .help-card-img {
   width: 100%;
-  max-width: 700px; 
-  height: auto;
+  max-width: 700px;          /* Prevent image from getting too large */
+  height: auto;              /* Maintain aspect ratio */
   display: block;
-  border-radius: 40px;
-  padding-left: 30%;
-  /* Negative padding removed - it does not function in CSS */
+  border-radius: 40px;       /* Rounded corners */
+  padding-left: 30%;         /* Push image slightly inward */
+  /* Note: Negative padding is invalid in CSS, so it's removed */
 }
 
-/* RIGHT SIDE: TEXT CONTENT */
+/* --- RIGHT SIDE: TEXT CONTENT --- */
 .help-center-content {
-  /* Pulls text to the LEFT side of its column (towards the card) */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center;   /* Vertically center text content */
   
-  /* 1. This pushes the whole text block to the right, away from the card */
-  padding-left: 90px; 
+  padding-left: 90px;        /* Push text away from the image */
   
-  /* 2. 'width: max-content' forces the text to stay on one single line */
-  width: max-content; 
+  width: max-content;        /* Prevent text wrapping (single-line behavior) */
   
-  /* 3. Remove the padding-right and massive max-width from before */
-  padding-right: 0;
-  max-width: none;
+  padding-right: 0;          /* Reset unnecessary padding */
+  max-width: none;           /* Remove width restriction */
 }
 
+/* Heading styling */
 .help-center-title {
   font-size: 1.8rem;
   font-weight: 700;
   color: #02033B;
   margin-bottom: 20px;
   line-height: 1.2;
-  margin-left: -51px;
+  margin-left: -51px;        /* Adjust horizontal alignment manually */
 }
 
+/* Paragraph styling */
 .help-center-p {
   font-size: 1.1rem;
   color: #02033B;
   line-height: 1.6;
   margin-bottom: 20px;
-  margin-left: -51px;
+  margin-left: -51px;        /* Align with heading */
 }
 
-/* BUTTON STYLING */
+/* --- BUTTON STYLING --- */
 .btn-help-center {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 38px; 
-  margin-left: -51px;
-  border: 2px solid #02033B;
+  padding: 14px 38px;        /* Button size */
+  margin-left: -51px;        /* Align with text */
+  border: 2px solid #02033B; /* Outline style */
   color: #02033B;
-  border-radius: 50px; 
+  border-radius: 50px;       /* Rounded pill shape */
   font-weight: 700;
   text-decoration: none;
   font-size: 1rem;
-  margin-top: 10px; 
-  width: fit-content; /* Ensures button doesn't stretch */
-  transition: all 0.3s ease;
+  margin-top: 10px;
+  width: fit-content;        /* Prevent button from stretching */
+  transition: all 0.3s ease; /* Smooth hover animation */
 }
 
+/* Button hover effect */
 .btn-help-center:hover {
-  background-color: #02033B;
-  color: #ffffff;
+  background-color: #02033B; /* Dark background on hover */
+  color: #ffffff;            /* White text */
 }
 
-/* RESPONSIVE FIX */
+/* --- RESPONSIVE FIX (TABLET & MOBILE) --- */
 @media (max-width: 991px) {
+  
   .help-center-content {
-      padding-left: 0;
-      margin-top: 50px;
-      text-align: center;
-      align-items: center;
+      padding-left: 0;       /* Remove extra spacing */
+      margin-top: 50px;      /* Add space above text */
+      text-align: center;    /* Center text */
+      align-items: center;   /* Center content horizontally */
   }
+
   .yellow-card-wrapper {
-      justify-content: center;
-      padding-right: 0;
+      justify-content: center; /* Center image */
+      padding-right: 0;        /* Remove side spacing */
   }
 }
 
