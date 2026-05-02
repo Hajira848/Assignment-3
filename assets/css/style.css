@@ -386,6 +386,7 @@ display: none;
   height: auto;
   display: block;
   border-radius: 40px;
+  padding-left: 30%;
   /* Negative padding removed - it does not function in CSS */
 }
 
@@ -408,12 +409,12 @@ display: none;
 }
 
 .help-center-title {
-  font-size: 2.2rem;
-  font-weight: 800;
+  font-size: 1.8rem;
+  font-weight: 700;
   color: #02033B;
   margin-bottom: 20px;
   line-height: 1.2;
-  margin-left: -50px;
+  margin-left: -51px;
 }
 
 .help-center-p {
@@ -421,7 +422,7 @@ display: none;
   color: #02033B;
   line-height: 1.6;
   margin-bottom: 20px;
-  margin-left: -50px;
+  margin-left: -51px;
 }
 
 /* BUTTON STYLING */
@@ -430,7 +431,7 @@ display: none;
   align-items: center;
   justify-content: center;
   padding: 14px 38px; 
-  margin-left: -50px;
+  margin-left: -51px;
   border: 2px solid #02033B;
   color: #02033B;
   border-radius: 50px; 
