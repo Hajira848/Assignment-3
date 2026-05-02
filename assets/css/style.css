@@ -17,12 +17,10 @@ html, body {
 
 /* --- HERO SECTION --- */ 
 .hero-section { 
-    min-height: 100vh;              /* Full viewport height */
-    display: flex;                 /* Flex layout for alignment */
-    align-items: center;           /* Vertically center content */
-    overflow: hidden;              /* Hide overflowing elements (like images) */
-    background: #fff; 
-    width: 100%;
+    display: flex;
+    align-items: stretch;
+    min-height: 90vh;
+    overflow: hidden;
 } 
 
 /* Left Content Area */ 
@@ -33,10 +31,11 @@ html, body {
 } 
 
 .hero-content h1 { 
-    font-size: clamp(2.5rem, 5vw, 4rem); /* Responsive font size */
-    color: var(--certo-dark-blue); 
-    line-height: 1.1; 
-    font-weight: 800;              /* Bold heading */
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 1.2rem;
+    color: var(--certo-dark-blue);     /* Bold heading */
 } 
 
 /* --- RIGHT SIDE: THE BLUE & ORANGE FRAME --- */ 
