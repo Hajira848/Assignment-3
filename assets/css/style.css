@@ -1,5 +1,4 @@
                        /*Section 1*/
-
 :root { 
     /* Color variables for consistent theme */
     --certo-blue: #4335DE; 
@@ -99,7 +98,6 @@ html, body {
 } 
 
 /* --- NAVBAR SIGN IN BUTTON --- */
-
 /* Align navbar items properly */
 .navbar-collapse {
     display: flex;
@@ -292,7 +290,7 @@ transform: translate(0, 0);
 display: none; 
 } 
 } 
-/* --- SECTION 4: LIGHT BLUE/WHITE STYLE --- */ 
+                       /*Section 4*/ 
 .spyware-full-blue { 
     background-color: #f3f7ff; /* Full section background in light blue */ 
     padding: 100px 0;          /* Vertical spacing (top & bottom) */ 
@@ -353,8 +351,6 @@ display: none;
 }
 
                           /*Section 5*/
-/* --- SECTION 5: WHITE BACKGROUND LAYOUT --- */
-
 /* Main section wrapper with white background */
 .section-white-bg {
   background-color: #ffffff !important; /* Bright white background */
@@ -469,7 +465,7 @@ display: none;
 
 
                /*Section 6*/
-/* --- SECTION 6: BLUE GRADIENT BANNER --- */
+
 .cta-gradient-section {
     /* Linear gradient background as per image_65a580.png */
     background: linear-gradient(135deg, #4b5df7 0%, #2b38b1 100%);
@@ -543,7 +539,6 @@ display: none;
 }
  
                        /*Section7*/
-/* --- SECTION 7: STACKED CENTERED FOOTER LAYOUT --- */
 .footer-stacked-center {
     background-color: #ffffff; 
     padding: 100px 0; /* Increased vertical spacing (top & bottom) */
@@ -606,8 +601,7 @@ display: none;
     }
 }
 
-                       /*Section 8*/
-/* --- SECTION 8: CUSTOM FOOTER --- */
+                       /*Section 8*/s
 .custom-footer {
     background-color: #02033b;   /* Dark blue footer background */
     padding: 60px 0;             /* Vertical spacing */
