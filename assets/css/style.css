@@ -606,136 +606,153 @@ display: none;
     }
 }
 
+                       /*Section 8*/
+/* --- SECTION 8: CUSTOM FOOTER --- */
 .custom-footer {
-    background-color: #02033b;
-    padding: 60px 0;
-    color: white;
+    background-color: #02033b;   /* Dark blue footer background */
+    padding: 60px 0;             /* Vertical spacing */
+    color: white;                /* Default text color */
     font-family: Arial, sans-serif;
 }
 
+/* Main container for footer content */
 .container {
-    max-width: 900px; /* Is se spacing tight ho jayegi */
-    margin: 0 auto;
+    max-width: 900px;            /* Reduced width for tighter layout */
+    margin: 0 auto;              /* Center horizontally */
     padding: 0 20px;
 }
 
-/* Row alignment */
+/* --- TOP ROW: LOGOS & ELEMENTS --- */
 .footer-row-wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center; /* Sab ko center align rakha hai row mein */
+    justify-content: space-between; /* Spread items across row */
+    align-items: center;            /* Vertically center items */
     margin-bottom: 40px;
 }
 
+/* Logo column */
 .logo-col {
     display: flex;
     align-items: center;
 }
 
-/* Google + Future 50 Stack */
+/* Stack layout (Google + Future 50 logos) */
 .stack {
-    flex-direction: column;
+    flex-direction: column;     /* Stack items vertically */
     align-items: flex-start !important;
-    gap: 15px;
+    gap: 15px;                 /* Space between stacked items */
 }
 
+/* Convert logos to white */
 .white-logo {
     filter: brightness(0) invert(1);
     height: 30px;
 }
 
-.img-google { height: 120px;width: 100%; margin-left: -30%; } /* Google thoda bada hota hai */
+/* Google logo styling */
+.img-google { 
+    height: 120px;
+    width: 100%; 
+    margin-left: -30%;          /* Manual alignment adjustment */
+}
+
+/* Intel logo styling */
 .img-intel { 
-    height: 200px; /* 200px bahut zyada bada tha */
+    height: 200px;              /* Large size */
     width: 120%; 
-    margin-left: 40%;
-    
-    /* Yeh filter white logo ko yellow mein convert kar dega */
-    filter: brightness(0) saturate(100%) invert(89%) sepia(20%) saturate(1200%) hue-rotate(350deg) brightness(105%) contrast(100%);
+    margin-left: 40%;           /* Manual positioning */
+
+    /* Converts white logo to yellow tone */
+    filter: brightness(0) saturate(100%) invert(89%) 
+            sepia(20%) saturate(1200%) 
+            hue-rotate(350deg) brightness(105%) contrast(100%);
 }
 
+/* Future 50 badge container */
 .future50-box {
-    height: 55px; /* White box size */
+    height: 55px;
     width: auto;
-  padding-left: 70%;
-    margin-bottom: -50%;
-    
+    padding-left: 70%;          /* Pushes it right */
+    margin-bottom: -50%;        /* Pulls it upward */
 }
 
-/* Yellow Box Styling */
+/* --- YELLOW CARD (CENTER ELEMENT) --- */
 .yellow-rect {
-    background-color: #ecb322;
-    height: 140px;width: 70%;
+    background-color: #ecb322;  /* Yellow background */
+    height: 140px;
+    width: 70%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    margin-left: 40%;
-    margin-top: -40px;
+    margin-left: 40%;           /* Push to right */
+    margin-top: -40px;          /* Pull upward */
 }
 
+/* Main Certo image */
 .certo-main {
     width: 70%; 
     height: auto;
     display: block;
 }
 
-/* Image 25: Plus Logo (Jo Certo ke upar aayega) */
+/* Overlay logo (positioned above main image) */
 .certo-plus {
-    position: absolute; /* Parent (.yellow-rect) ke upar fix karne ke liye */
+    position: absolute;         /* Positioned relative to parent */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Yeh line perfectly center karti hai */
-    width: 80%; /* Size ko adjust karein jaisa image mein chahiye */
-    pointer-events: none; /* Taake niche wali image click ho sake agar zaroorat ho */
+    transform: translate(-50%, -50%); /* Perfect center alignment */
+    width: 80%;
+    pointer-events: none;       /* Allow clicks to pass through */
 }
 
-/* Text Styling */
+/* --- BOTTOM TEXT SECTION --- */
 .footer-bottom {
     margin-top: 50px;
-    text-align: left; /* Text ko left-aligned rakhne ke liye */
+    text-align: left;
 }
 
+/* Legal/disclaimer text */
 .legal-text {
     font-size: 11px;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.4);
-    max-width: 850px; /* Is se text automatic lines mein break ho jayega */
+    max-width: 850px;           /* Controls line wrapping */
     margin-bottom: 20px;
 }
 
+/* Divider line */
 .divider {
     border: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     margin: 20px 0;
-
-     
 }
-.legal-text{
-     margin-left: -9%;
+
+/* Legal text (overwritten with flex layout) */
+.legal-text {
+    margin-left: -9%;           /* Manual shift */
     display: flex;
-    flex-direction: column; /* Is se items ek ke neeche ek (next line) aa jayenge */
-    gap: 8px;               /* Dono lines ke darmiyan thoda gap dene ke liye */
+    flex-direction: column;     /* Stack lines */
+    gap: 8px;
     font-size: 11px;
     color: rgba(255, 255, 255, 0.6);
     text-align: left;
-
-    
 }
+
+/* Copyright section */
 .copyright-row {
-    margin-left: -30%;
+    margin-left: -30%;          /* Manual left shift */
     display: flex;
-    flex-direction: column; /* Is se items ek ke neeche ek (next line) aa jayenge */
-    gap: 8px;               /* Dono lines ke darmiyan thoda gap dene ke liye */
+    flex-direction: column;     /* Stack items vertically */
+    gap: 8px;
     font-size: 11px;
     color: rgba(255, 255, 255, 0.6);
-    text-align: left;       /* Text ko left side par align rakhne ke liye */
+    text-align: left;
 }
 
+/* Footer links */
 .copyright-row a {
     color: white;
     text-decoration: underline;
 }
-
-.copyright-row a { color: white; text-decoration: underline; }
