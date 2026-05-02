@@ -291,53 +291,62 @@ transform: translate(0, 0);
 display: none; 
 } 
 } 
-                          /*Sectio 4*/ 
 /* --- SECTION 4: LIGHT BLUE/WHITE STYLE --- */ 
 .spyware-full-blue { 
-background-color: #f3f7ff; /* Poora background light blue */ 
-padding: 100px 0; 
-width: 100%; 
-display: flex; 
-justify-content: center; 
+    background-color: #f3f7ff; /* Full section background in light blue */ 
+    padding: 100px 0;          /* Vertical spacing (top & bottom) */ 
+    width: 100%; 
+    display: flex; 
+    justify-content: center;   /* Center the inner container horizontally */ 
 } 
+
 .spyware-full-blue .container { 
-display: flex; 
-flex-direction: column; 
-align-items: center; /* Horizontally Center */ 
-text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;       /* Horizontally center all child elements */ 
+    text-align: center;        /* Center text content */ 
 } 
+
 /* Heading Image (image10) */ 
 .spy-header-row { 
-margin-bottom: 60px; /* Image 10 aur 11 ke darmiyan gap */ 
-width: 100%; 
+    margin-bottom: 60px;       /* Space between heading image and feature cards */ 
+    width: 100%; 
 } 
+
 .img-10-full { 
-max-width: 650px; 
-width: 35%; 
-height: auto; 
-display: inline-block; 
+    max-width: 650px;          /* Prevent image from getting too large */ 
+    width: 35%;                /* Responsive width control */ 
+    height: auto;              /* Maintain aspect ratio */ 
+    display: inline-block; 
 } 
+
 /* Features Grid (image11) */ 
 .spy-card-row { 
-width: 100%; 
+    width: 100%; 
 } 
+
 .img-11-full { 
-max-width: 1000px; /* Card size lock */ 
-width: 35%; 
-height: auto; 
-display: inline-block; 
-/* Card ko clean rakhne ke liye */ 
-filter: drop-shadow(0 15px 40px rgba(0,0,0,0.04)); 
+    max-width: 1000px;         /* Lock maximum size for feature card image */ 
+    width: 35%;                /* Responsive scaling */ 
+    height: auto;              /* Maintain proportions */ 
+    display: inline-block; 
+    
+    /* Subtle shadow for clean card appearance */ 
+    filter: drop-shadow(0 15px 40px rgba(0,0,0,0.04)); 
 } 
-/* Mobile Responsive */ 
+
+/* --- MOBILE RESPONSIVE --- */ 
 @media (max-width: 768px) { 
-.spyware-full-blue { 
-padding: 60px 15px; 
-} 
-.img-10-full { 
-width: 85%; 
-} 
-.spy-header-row { 
-margin-bottom: 30px; 
-} 
+
+    .spyware-full-blue { 
+        padding: 60px 15px;    /* Reduce spacing for smaller screens */ 
+    } 
+
+    .img-10-full { 
+        width: 85%;            /* Increase width for better visibility on mobile */ 
+    } 
+
+    .spy-header-row { 
+        margin-bottom: 30px;   /* Reduce spacing between elements */ 
+    } 
 }
