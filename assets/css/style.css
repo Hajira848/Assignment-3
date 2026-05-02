@@ -1,154 +1,178 @@
 :root { 
---certo-blue: #4335DE; 
---certo-dark-blue: #02033b; 
---certo-yellow: #FFC043; 
+    /* Color variables for consistent theme */
+    --certo-blue: #4335DE; 
+    --certo-dark-blue: #02033b; 
+    --certo-yellow: #FFC043; 
 } 
-html, body {     /* Base Settings to prevent shifting */ 
-overflow-x: hidden; 
-width: 100%; 
-margin: 0; 
-padding: 0; 
+
+html, body {     
+    /* Prevent horizontal scrolling and layout shifting */
+    overflow-x: hidden; 
+    width: 100%; 
+    margin: 0; 
+    padding: 0; 
 } 
+
 /* --- HERO SECTION --- */ 
 .hero-section { 
-min-height: 100vh; 
-display: flex; 
-align-items: center; 
-overflow: hidden; /* Bahar nikalti hui images ko lock karne ke liye */ 
-background: #fff; 
-width: 100%;
+    min-height: 100vh;              /* Full viewport height */
+    display: flex;                 /* Flex layout for alignment */
+    align-items: center;           /* Vertically center content */
+    overflow: hidden;              /* Hide overflowing elements (like images) */
+    background: #fff; 
+    width: 100%;
 } 
+
 /* Left Content Area */ 
 .hero-content { 
-padding: 0 10% 0 15%; /* Spacing ko lock kar diya */ 
-position: relative; 
-z-index: 5; 
+    padding: 0 10% 0 15%;          /* Fixed spacing for layout balance */
+    position: relative; 
+    z-index: 5;                    /* Keep content above background elements */
 } 
+
 .hero-content h1 { 
-font-size: clamp(2.5rem, 5vw, 4rem); /* Responsive but controlled size */ 
-color: var(--certo-dark-blue); 
-line-height: 1.1; 
-font-weight: 800; 
+    font-size: clamp(2.5rem, 5vw, 4rem); /* Responsive font size */
+    color: var(--certo-dark-blue); 
+    line-height: 1.1; 
+    font-weight: 800;              /* Bold heading */
 } 
+
 /* --- RIGHT SIDE: THE BLUE & ORANGE FRAME --- */ 
 .blue-frame { 
-position: relative; 
-width: 100%; 
-height: 100vh; 
-background-color: var(--certo-blue); 
-/* Blue border effect using padding */ 
-padding-top: 25px; 
-padding-left: 25px; 
+    position: relative; 
+    width: 100%; 
+    height: 100vh; 
+    background-color: var(--certo-blue); 
+    
+    /* Creates a border-like effect using padding */
+    padding-top: 25px; 
+    padding-left: 25px; 
 } 
+
 .hero-bg-image { 
-width: 100%; 
-height: 100%; 
-object-fit: cover; 
-display: block; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;             /* Ensure image covers container */
+    display: block; 
 } 
-/* --- THE MOBILE PHONE (The moving part) --- */ 
+
+/* --- THE MOBILE PHONE (Floating element) --- */ 
 .mobile-container { 
-position: absolute; 
-top: 50%; 
-/* Isay percentage mein lock kiya hai taake ye white aur orange ke junction par rahe */ 
-left: 0; 
-transform: translate(-40%, -50%); 
-width: 35%; /* Box size fixed */ 
-max-width: 300px; 
-z-index: 20; 
-pointer-events: none; /* Mouse moves se disturb nahi hoga */ 
-margin-left: 20%; 
+    position: absolute; 
+    top: 50%;                      /* Vertically centered */
+    left: 0;                       /* Positioned from left edge */
+    
+    /* Adjust position relative to container */
+    transform: translate(-40%, -50%); 
+    
+    width: 35%;                    /* Fixed proportional size */
+    max-width: 300px;              /* Prevent it from getting too large */
+    z-index: 20;                   /* Above most elements */
+    pointer-events: none;          /* Prevent mouse interaction issues */
+    margin-left: 20%;              /* Fine-tuned horizontal positioning */
 } 
+
 .floating-mobile { 
-width: 100%; 
-height: auto; 
-display: block; 
-filter: drop-shadow(0 20px 50px rgba(0,0,0,0.3)); 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    
+    /* Adds a soft shadow for floating effect */
+    filter: drop-shadow(0 20px 50px rgba(0,0,0,0.3)); 
 } 
-/* --- BUTTONS (Fixed Sizes) --- */ 
+
+/* --- BUTTONS (Fixed Styles) --- */ 
 .btn-certo-yellow { 
-background-color: var(--certo-yellow) !important; 
-color: var(--certo-dark-blue) !important; 
-padding: 12px 30px !important; 
-border-radius: 50px !important; 
+    background-color: var(--certo-yellow) !important; 
+    color: var(--certo-dark-blue) !important; 
+    padding: 12px 30px !important; 
+    border-radius: 50px !important; /* Rounded pill shape */
 } 
+
 .btn-certo-outline { 
-background: transparent !important; 
-border: 2px solid var(--certo-dark-blue) !important; 
-color: var(--certo-dark-blue) !important; 
-padding: 12px 30px !important; 
-border-radius: 50px !important; 
+    background: transparent !important; 
+    border: 2px solid var(--certo-dark-blue) !important; 
+    color: var(--certo-dark-blue) !important; 
+    padding: 12px 30px !important; 
+    border-radius: 50px !important; 
 } 
+
 /* --- NAVBAR SIGN IN BUTTON --- */
 
-/* Ensures the container moves to the right in Bootstrap navbar */
+/* Align navbar items properly */
 .navbar-collapse {
     display: flex;
     align-items: center;
 }
 
-/* Specific styling for the button image */
+/* Styling for button image */
 .fixed-btn-img {
-    height: 35px;            /* Set the fixed height */
-    width: auto;             /* Keeps the image aspect ratio perfect */
-    cursor: pointer;         /* Shows hand icon on hover */
-    transition: transform 0.2s ease, opacity 0.2s ease; /* Smooth transition for hover effect */
+    height: 35px;                 
+    width: auto;                  /* Maintain aspect ratio */
+    cursor: pointer;              
+    transition: transform 0.2s ease, opacity 0.2s ease; /* Smooth hover effect */
     display: block;
 }
 
-/* Hover effect to make it interactive */
+/* Hover interaction for button */
 .fixed-btn-img:hover {
-    transform: scale(1.05);  /* Slightly grows when hovered */
-    opacity: 0.9;            /* Slightly fades for a button-click feel */
+    transform: scale(1.05);       /* Slight zoom */
+    opacity: 0.9;                 /* Slight fade */
 }
 
 /* --- NAVBAR LOGO STYLING --- */
 
 .navbar-brand {
     display: flex;
-    align-items: center; /* Vertically centers the logo in the navbar */
-    padding: 0;          /* Removes default Bootstrap padding for a cleaner look */
+    align-items: center;          /* Vertically center logo */
+    padding: 0;                   
 }
 
 .fixed-logo {
-    height: 30px;        /* Set the ideal height for your logo */
-    width: auto;         /* Maintains the original aspect ratio */
+    height: 30px;                 
+    width: auto;                  
     display: block;
-    transition: transform 0.3s ease; /* Adds a smooth feel for interactions */
+    transition: transform 0.3s ease; /* Smooth hover animation */
 }
 
-/* Optional: Slight hover effect */
+/* Subtle hover effect for logo */
 .fixed-logo:hover {
-    transform: scale(1.02); /* Very subtle growth on hover */
+    transform: scale(1.02);
 }
 
 /* --- MOBILE RESPONSIVE (Strict Control) --- */ 
 @media (max-width: 991px) { 
-.hero-section { 
-flex-direction: column; 
-} 
 
-.hero-content { 
-padding: 50px 20px; 
-text-align: center; 
-} 
-.blue-frame { 
-height: 450px; 
-padding-left: 0; /* Mobile par blue border side se khatam */ 
-} 
-.fixed-btn-img {
-        height: 40px;        /* Smaller size for mobile screens */
-        margin-top: 15px;    /* Adds space from menu links on mobile */
+    .hero-section { 
+        flex-direction: column;   /* Stack elements vertically */
+    } 
+
+    .hero-content { 
+        padding: 50px 20px; 
+        text-align: center;       /* Center content for mobile */
+    } 
+
+    .blue-frame { 
+        height: 450px; 
+        padding-left: 0;          /* Remove side border effect on mobile */
+    } 
+
+    .fixed-btn-img {
+        height: 40px;             
+        margin-top: 15px;         /* Space from menu items */
     }
-     .justify-content-end {
-        justify-content: center !important; /* Centers button on mobile menu */
+
+    .justify-content-end {
+        justify-content: center !important; /* Center items in mobile menu */
     }
-.mobile-container { 
-left: 50%; 
-transform: translate(-50%, -50%); 
-width: 220px; 
-} 
- .fixed-logo {
-        height: 35px;    /* Slightly smaller logo for mobile screens */
+
+    .mobile-container { 
+        left: 50%; 
+        transform: translate(-50%, -50%); /* Perfect center alignment */
+        width: 220px; 
+    } 
+
+    .fixed-logo {
+        height: 35px;             
     }
-} 
+}
