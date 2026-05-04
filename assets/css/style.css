@@ -735,9 +735,3 @@ display: none;
     color: white;
     text-decoration: underline;
 }
-
-/* Duplicate rule (same as above, kept as-is) */
-.copyright-row a { 
-    color: white; 
-    text-decoration: underline; 
-}
