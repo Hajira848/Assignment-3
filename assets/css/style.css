@@ -25,9 +25,9 @@ html, body {
 
 /* Left Content Area */ 
 .hero-content { 
-    padding: 0 10% 0 15%;          /* Fixed spacing for layout balance */
+    padding: 0 10% 0 15%;         
     position: relative; 
-    z-index: 5;            /* Keep content above background elements */
+    z-index: 5;            
 } 
 
 .hero-content h1 { 
@@ -35,39 +35,35 @@ html, body {
     font-weight: 900;
     line-height: 1.15;
     margin-bottom: 1.2rem;
-    color: var(--certo-dark-blue);     /* Bold heading */
+    color: var(--certo-dark-blue);     
 } 
 
 /* --- RIGHT SIDE: THE BLUE & ORANGE FRAME --- */ 
 .hero-bg-image { 
     width: 100%; 
     height: 100%; 
-    object-fit: cover;             /* Ensure image covers container */
+    object-fit: cover;            
     display: block; 
 } 
 
 /* --- THE MOBILE PHONE (Floating element) --- */ 
 .mobile-container { 
     position: absolute; 
-    top: 50%;                      /* Vertically centered */
-    left: 0;                       /* Positioned from left edge */
-    
-    /* Adjust position relative to container */
+    top: 50%;                      
+    left: 0;                       
     transform: translate(-40%, -50%); 
      height: 60%;
-    width: 35%;                    /* Fixed proportional size */
-    max-width: 300px;              /* Prevent it from getting too large */
-    z-index: 20;                   /* Above most elements */
-    pointer-events: none;          /* Prevent mouse interaction issues */
-    margin-left: 60%;              /* Fine-tuned horizontal positioning */
+    width: 35%;                    
+    max-width: 300px;             
+    z-index: 20;                   
+    pointer-events: none;          
+    margin-left: 60%;              
 } 
 
 .floating-mobile { 
     width: 90%; 
     height: 120%; 
     display: block; 
-    
-    /* Adds a soft shadow for floating effect */
     filter: drop-shadow(0 20px 50px rgba(0,0,0,0.3)); 
 } 
 
@@ -76,7 +72,7 @@ html, body {
     background-color: var(--certo-yellow) !important; 
     color: var(--certo-dark-blue) !important; 
     padding: 12px 30px !important; 
-    border-radius: 50px !important; /* Rounded pill shape */
+    border-radius: 50px !important; 
 } 
 
 .btn-certo-outline { 
@@ -88,7 +84,6 @@ html, body {
 } 
 
 /* --- NAVBAR SIGN IN BUTTON --- */
-/* Align navbar items properly */
 .navbar-collapse {
     display: flex;
     align-items: center;
@@ -97,24 +92,24 @@ html, body {
 /* Styling for button image */
 .fixed-btn-img {
     height: 35px;                 
-    width: auto;                  /* Maintain aspect ratio */
+    width: auto;                  
     cursor: pointer;              
-    transition: transform 0.2s ease, opacity 0.2s ease; /* Smooth hover effect */
+    transition: transform 0.2s ease, opacity 0.2s ease; 
     display: block;
     margin-right: -17%;
 }
 
 /* Hover interaction for button */
 .fixed-btn-img:hover {
-    transform: scale(1.05);       /* Slight zoom */
-    opacity: 0.9;                 /* Slight fade */
+    transform: scale(1.05);       
+    opacity: 0.9;                 
 }
 
 /* --- NAVBAR LOGO STYLING --- */
 
 .navbar-brand {
     display: flex;
-    align-items: center;          /* Vertically center logo */
+    align-items: center;          
     padding: 0;                   
 }
 
@@ -123,7 +118,7 @@ html, body {
     width: auto;                  
     display: block;
     transition: transform 0.3s ease;
-    margin-left: -200%; /* Smooth hover animation */
+    margin-left: -200%; 
 }
 
 /* Subtle hover effect for logo */
@@ -135,32 +130,32 @@ html, body {
 @media (max-width: 991px) { 
 
     .hero-section { 
-        flex-direction: column;   /* Stack elements vertically */
+        flex-direction: column;   
     } 
 
     .hero-content { 
         padding: 50px 20px; 
-        text-align: center;       /* Center content for mobile */
+        text-align: center;       
     } 
 
     .blue-frame { 
         height: 450px; 
-        padding-left: 0;          /* Remove side border effect on mobile */
+        padding-left: 0;         
     } 
 
     .fixed-btn-img {
         height: 40px;             
         margin-top: 15px; 
-        margin-left: -7%;        /* Space from menu items */
+        margin-left: -7%;       
     }
 
     .justify-content-end {
-        justify-content: center !important; /* Center items in mobile menu */
+        justify-content: center !important; 
     }
 
     .mobile-container { 
         left: 50%; 
-        transform: translate(-50%, -50%); /* Perfect center alignment */
+        transform: translate(-50%, -50%); 
         width: 220px; 
     } 
 
@@ -174,7 +169,7 @@ html, body {
 background-color: #FFC043; /* Brand yellow background */ 
 padding: 60px 0; 
 width: 100%; 
-overflow: hidden; /* Prevents content from overflowing outside */ 
+overflow: hidden; 
 } 
 .sec2-container { 
 max-width: 1200px; 
@@ -188,7 +183,7 @@ align-items: center;
 .sec2-heading { 
 margin-bottom: 40px; 
 width: 100%; 
-text-align: left; /* Keeps heading aligned to the left */ 
+text-align: left; 
 } 
 .sec2-heading img { 
 max-width: 500px; 
@@ -203,8 +198,8 @@ display: flex;
 justify-content: center; 
 } 
 .full-cards-img { 
-width: 127%; /* Slightly larger to fully cover the design */ 
-max-width: none; /* Remove width constraints */ 
+width: 127%; 
+max-width: none; 
 height: auto; 
 } 
 /* Logos Section Fix */ 
@@ -217,14 +212,13 @@ justify-content: center;
 width: 100%; 
 max-width: 1100px; 
 height: auto; 
-/* Ensures logos stay properly contained without extra spacing */ 
 object-fit: contain; 
 display: block; 
 } 
 /* Mobile Responsive */ 
 @media (max-width: 768px) { 
 .full-cards-img { 
-width: 200%; /* Makes cards feel scrollable on mobile */ 
+width: 200%; 
 } 
 } 
 
@@ -246,10 +240,9 @@ height: auto;
 display: block; 
 margin-left: -13%;
 } 
-/* Right Content: Visual with Frame */ 
 .mission-visual { 
 position: relative; 
-padding: 30px; /* Space for the yellow frame to show */ 
+padding: 30px; 
 display: flex; 
 justify-content: center; 
 align-items: center; 
@@ -285,30 +278,30 @@ display: none;
 } 
                        /*Section 4*/ 
 .spyware-full-blue { 
-    background-color: #f3f8ff; /* Full section background in light blue */ 
-    padding: 100px 0;          /* Vertical spacing (top & bottom) */ 
+    background-color: #f3f8ff; 
+    padding: 100px 0;          
     width: 100%; 
     display: flex; 
-    justify-content: center;   /* Center the inner container horizontally */ 
+    justify-content: center;   
 } 
 
 .spyware-full-blue .container { 
     display: flex; 
     flex-direction: column; 
-    align-items: center;       /* Horizontally center all child elements */ 
-    text-align: center;        /* Center text content */ 
+    align-items: center;       
+    text-align: center;        
 } 
 
 /* Heading Image (image10) */ 
 .spy-header-row { 
-    margin-bottom: 60px;       /* Space between heading image and feature cards */ 
+    margin-bottom: 60px;       
     width: 100%; 
 } 
 
 .img-10-full { 
-    max-width: 650px;          /* Prevent image from getting too large */ 
-    width: 50%;                /* Responsive width control */ 
-    height: auto;              /* Maintain aspect ratio */ 
+    max-width: 650px;         
+    width: 50%;                
+    height: auto;              
     display: inline-block; 
 } 
 
@@ -318,9 +311,9 @@ display: none;
 } 
 
 .img-11-full { 
-    max-width: 1000px;         /* Lock maximum size for feature card image */ 
-    width: 60%;                /* Responsive scaling */ 
-    height: auto;              /* Maintain proportions */ 
+    max-width: 1000px;         
+    width: 60%;                
+    height: auto;              
     display: inline-block; 
     
     /* Subtle shadow for clean card appearance */ 
@@ -331,70 +324,69 @@ display: none;
 @media (max-width: 768px) { 
 
     .spyware-full-blue { 
-        padding: 60px 15px;    /* Reduce spacing for smaller screens */ 
+        padding: 60px 15px;    
     } 
 
     .img-10-full { 
-        width: 85%;            /* Increase width for better visibility on mobile */ 
+        width: 85%;            
     } 
 
     .spy-header-row { 
-        margin-bottom: 30px;   /* Reduce spacing between elements */ 
+        margin-bottom: 30px;   
     } 
 }
 
                           /*Section 5*/
 /* Main section wrapper with white background */
 .section-white-bg {
-  background-color: #ffffff !important; /* Bright white background */
-  padding: 60px 0;                      /* Vertical spacing */
+  background-color: #ffffff !important; 
+  padding: 60px 0;                      
   width: 100%;
   display: block;
 }
 
 /* Container settings for consistent width */
 .section-white-bg .container {
-  max-width: 1200px !important; /* Limit maximum width */
-  margin: 0 auto;               /* Center container horizontally */
+  max-width: 1200px !important; 
+  margin: 0 auto;               
 }
 
 /* Row alignment */
 .section-white-bg .row {
-  justify-content: center !important; /* Center columns */
+  justify-content: center !important; 
   display: flex;
 }
 
 /* --- LEFT SIDE: IMAGE WRAPPER --- */
 .yellow-card-wrapper {
   display: flex;
-  justify-content: flex-end; /* Push image toward the text (right side) */
+  justify-content: flex-end; 
   width: 100%;
-  padding-right: 40px;       /* Controls spacing between image and text */
+  padding-right: 40px;      
 }
 
 /* Image styling */
 .help-card-img {
   width: 100%;
-  max-width: 700px;          /* Prevent image from getting too large */
-  height: auto;              /* Maintain aspect ratio */
+  max-width: 700px;          
+  height: auto;             
   display: block;
-  border-radius: 40px;       /* Rounded corners */
-  padding-left: 30%;         /* Push image slightly inward */
-  /* Note: Negative padding is invalid in CSS, so it's removed */
+  border-radius: 40px;       
+  padding-left: 30%;         
 }
 
 /* --- RIGHT SIDE: TEXT CONTENT --- */
 .help-center-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* Vertically center text content */
+  justify-content: center;  
   
-  padding-left: 90px;        /* Push text away from the image */
+  padding-left: 90px;       
   
-  width: max-content;        /* Prevent text wrapping (single-line behavior) */
+  width: max-content;        
   
-  padding-right: 0;          /* Reset unnecessary padding */
-  max-width: none;           /* Remove width restriction */
+  padding-right: 0;         
+  max-width: none;           
 }
 
 /* Heading styling */
@@ -404,7 +396,7 @@ display: none;
   color: #02033B;
   margin-bottom: 20px;
   line-height: 1.2;
-  margin-left: -51px;        /* Adjust horizontal alignment manually */
+  margin-left: -51px;       
 }
 
 /* Paragraph styling */
@@ -413,7 +405,7 @@ display: none;
   color: #02033B;
   line-height: 1.6;
   margin-bottom: 20px;
-  margin-left: -51px;        /* Align with heading */
+  margin-left: -51px;        
 }
 
 /* --- BUTTON STYLING --- */
@@ -421,46 +413,45 @@ display: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 38px;        /* Button size */
-  margin-left: -51px;        /* Align with text */
-  border: 2px solid #02033B; /* Outline style */
+  padding: 14px 38px;        
+  margin-left: -51px;        
+  border: 2px solid #02033B; 
   color: #02033B;
-  border-radius: 50px;       /* Rounded pill shape */
+  border-radius: 50px;      
   font-weight: 700;
   text-decoration: none;
   font-size: 1rem;
   margin-top: 10px;
-  width: fit-content;        /* Prevent button from stretching */
-  transition: all 0.3s ease; /* Smooth hover animation */
+  width: fit-content;        
+  transition: all 0.3s ease; 
 }
 
 /* Button hover effect */
 .btn-help-center:hover {
-  background-color: #02033B; /* Dark background on hover */
-  color: #ffffff;            /* White text */
+  background-color: #02033B; 
+  color: #ffffff;           
 }
 
 /* --- RESPONSIVE FIX (TABLET & MOBILE) --- */
 @media (max-width: 991px) {
   
   .help-center-content {
-      padding-left: 0;       /* Remove extra spacing */
-      margin-top: 50px;      /* Add space above text */
-      text-align: center;    /* Center text */
-      align-items: center;   /* Center content horizontally */
+      padding-left: 0;       
+      margin-top: 50px;      
+      text-align: center;    
+      align-items: center;  
   }
 
   .yellow-card-wrapper {
-      justify-content: center; /* Center image */
-      padding-right: 0;        /* Remove side spacing */
+      justify-content: center; 
+      padding-right: 0;        
   }
 }
-
 
                /*Section 6*/
 
 .cta-gradient-section {
-    /* Linear gradient background as per image_65a580.png */
+
     background: linear-gradient(135deg, #4b5df7 0%, #2b38b1 100%);
     padding: 80px 0;
     width: 100%;
@@ -474,7 +465,7 @@ display: none;
 }
 
 .img-14-cta {
-    max-width: 600px; /* Adjust based on design scale */
+    max-width: 600px; 
     width: 100%;
     height: auto;
 }
@@ -484,28 +475,28 @@ display: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Space between the two buttons */
-    flex-wrap: wrap; /* Wraps buttons on mobile */
+    gap: 20px; 
+    flex-wrap: wrap; 
 }
 
-/* Image 15 (iPhone Button) Styling */
+
 .img-15-btn {
-    height: 55px; /* Size to match the Android button height */
+    height: 55px; 
     width: auto;
     cursor: pointer;
     transition: transform 0.2s ease;
 }
 
 .img-15-btn:hover {
-    transform: translateY(-3px); /* Hover lift effect */
+    transform: translateY(-3px); 
 }
 
-/* Manual Android Button Styling to match Image 15 */
+
 .android-outline-btn {
     height: 55px;
     padding: 0 30px;
     border: 2px solid white;
-    border-radius: 50px; /* Rounded pill shape */
+    border-radius: 50px; 
     color: white;
     text-decoration: none;
     display: flex;
@@ -526,7 +517,7 @@ display: none;
     }
     
     .cta-buttons-wrapper {
-        flex-direction: column; /* Stack buttons vertically on mobile */
+        flex-direction: column; 
         gap: 15px;
     }
 }
@@ -534,39 +525,39 @@ display: none;
                        /*Section7*/
 .footer-stacked-center {
     background-color: #F3F8FF; 
-    padding: 100px 0; /* Increased vertical spacing (top & bottom) */
+    padding: 100px 0; 
     width: 100%;
 }
 
 /* --- TOP LOGO (Image 20) --- */
 .img-20-top {
-    max-width: 500px; /* Limit maximum size */
-    width: 150%;      /* Makes it appear larger than container (can cause overflow) */
-    height: auto;     /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Space below logo */
+    max-width: 500px; 
+    width: 150%;      
+    height: auto;    
+    margin-bottom: 20px; 
 }
 
-/* --- MIDDLE ROW: BADGES (Images 16, 17, 18) --- */
+
 .middle-badges-row {
     display: flex;
-    justify-content: center;  /* Center badges horizontally */
-    gap: 50px;                /* Space between badges */
-    margin-bottom: 40px;      /* Space below badges row */
-    flex-wrap: wrap;          /* Allow wrapping on smaller screens */
-    align-items: center;      /* Vertically align badges */
+    justify-content: center;  
+    gap: 50px;                
+    margin-bottom: 40px;      
+    flex-wrap: wrap;          
+    align-items: center;      
 }
 
 /* Individual badge styling */
 .badge-mid {
-    height: 400px;            /* Large badge size (very big) */
-    width: auto;              /* Maintain aspect ratio */
-    object-fit: contain;      /* Prevent image distortion */
+    height: 400px;            
+    width: auto;             
+    object-fit: contain;      
 }
 
-/* --- BOTTOM BADGE (Image 19) --- */
+
 .img-19-bottom {
-    height: 50px;             /* Fixed height for clarity */
-    width: auto;              /* Maintain aspect ratio */
+    height: 50px;             
+    width: auto;              
     display: inline-block;
     margin-left: -7%;
 }
@@ -575,48 +566,48 @@ display: none;
 @media (max-width: 768px) {
 
     .footer-stacked-center {
-        padding: 60px 20px;   /* Reduce spacing for smaller screens */
+        padding: 60px 20px;   
     }
     
     .img-20-top {
-        max-width: 300px;     /* Smaller logo on mobile */
+        max-width: 300px;     
     }
     
     .badge-mid {
-        height: 40px;         /* Reduce badge size for mobile */
+        height: 40px;         
     }
     
     .img-19-bottom {
-        height: 50px;         /* Keep bottom badge readable */
+        height: 50px;         
     }
     
     .middle-badges-row {
-        gap: 25px;            /* Reduce spacing between badges */
+        gap: 25px;            
     }
 }
 
                        /*Section 8*/
 
 .custom-footer {
-    background-color: #02033b; /* Dark blue footer background */
-    padding: 60px 0;           /* Vertical spacing (top & bottom) */
-    color: white;              /* Default text color */
+    background-color: #02033b; 
+    padding: 60px 0;          
+    color: white;              
     font-family: Arial, sans-serif;
 }
 
 /* Main container for footer content */
 .container {
-    max-width: 900px; /* Keeps layout compact/tight */
-    margin: 0 auto;   /* Centers container horizontally */
-    padding: 0 20px;  /* Side padding */
+    max-width: 900px; 
+    margin: 0 auto;   
+    padding: 0 20px;  
 }
 
 /* --- TOP ROW ALIGNMENT --- */
 .footer-row-wrapper {
     display: flex;
-    justify-content: space-between; /* Space between elements */
-    align-items: center;            /* Vertically center all items */
-    margin-bottom: 40px;            /* Space below row */
+    justify-content: space-between; 
+    align-items: center;            
+    margin-bottom: 40px;          
 }
 
 /* Logo column wrapper */
@@ -625,11 +616,11 @@ display: none;
     align-items: center;
 }
 
-/* --- STACK: GOOGLE + FUTURE 50 --- */
+
 .stack {
-    flex-direction: column;       /* Stack items vertically */
-    align-items: flex-start !important; /* Align to left */
-    gap: 15px;                    /* Space between stacked items */
+    flex-direction: column;   
+    align-items: flex-start !important; 
+    gap: 15px;                   
 }
 
 /* Converts logos to white */
@@ -641,27 +632,27 @@ display: none;
 .img-google { 
     height: 120px;
     width: 100%; 
-    margin-left: -30%; /* Manual left shift for alignment */
+    margin-left: -30%; 
 }
 
 /* Intel logo styling */
 .img-intel { 
-    height: 200px;  /* Large size */
+    height: 200px; 
     width: 120%; 
-    margin-left: 40%; /* Push to the right */
+    margin-left: 40%;
 }
 
 /* Future 50 badge container */
 .future50-box {
     height: 55px; 
     width: auto;
-    padding-left: 70%;  /* Pushes element right */
-    margin-bottom: -50%; /* Pulls element upward */
+    padding-left: 70%;  
+    margin-bottom: -50%; 
 }
 
 /* --- YELLOW CARD SECTION --- */
 .yellow-rect {
-    background-color: #ecb322; /* Yellow background */
+    background-color: #ecb322; 
     height: 140px;
     width: 70%;
     position: relative;
@@ -669,8 +660,8 @@ display: none;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    margin-left: 40%;  /* Push to right */
-    margin-top: -40px; /* Pull upward */
+    margin-left: 40%;  
+    margin-top: -40px; 
 }
 
 /* Main Certo image */
@@ -680,20 +671,20 @@ display: none;
     display: block;
 }
 
-/* Overlay logo (placed on top of Certo image) */
+
 .certo-plus {
-    position: absolute; /* Positioned relative to parent (.yellow-rect) */
+    position: absolute; 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Perfect center alignment */
+    transform: translate(-50%, -50%); 
     width: 80%; 
-    pointer-events: none; /* Allows clicks to pass through */
+    pointer-events: none; 
 }
 
 /* --- FOOTER TEXT SECTION --- */
 .footer-bottom {
     margin-top: 50px;
-    text-align: left; /* Left-aligned text */
+    text-align: left; 
 }
 
 .legal-text {
@@ -719,18 +710,18 @@ display: none;
 
 
 
-/* Copyright section */
+
 .copyright-row {
-    margin-left: -30%; /* Manual left shift */
+    margin-left: -30%; 
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    gap: 8px;               /* Space between items */
+    flex-direction: column; 
+    gap: 8px;              
     font-size: 11px;
     color: rgba(255, 255, 255, 0.6);
     text-align: left;
 }
 
-/* Footer links */
+
 .copyright-row a {
     color: white;
     text-decoration: underline;
